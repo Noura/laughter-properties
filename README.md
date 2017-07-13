@@ -24,7 +24,7 @@ Add the audio file you want to convert.
 
 Under `Choose Profile`, choose wav. 
 
-<strong>If wav file format is not an option for you... </strong> If wav is not an option, click `Customize...` then on the `Encapsulation` tab choose `WAV`, on the `Audio codec` tab choose `WAV`, then click `Save as new Profile...` and name it `my wav` or something descriptive. You should only need to do this the first time you Convert/Stream with VLC, in the future you can just make sure to choose the `my wav` profile.
+<strong>If wav file format is not an option for you... </strong> If wav is not an option in the dropdown list, click `Customize...` which is just next to the dropdown, then on the `Encapsulation` tab choose `WAV`, on the `Audio codec` tab choose `WAV`, then click `Save as new Profile...` and name it `my wav` or something descriptive. You should only need to do this the first time you Convert/Stream with VLC, in the future you can just make sure to choose the `my wav` profile.
 
 Choose an output destination and name for the .wav file.
 
