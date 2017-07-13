@@ -4,11 +4,11 @@
 
 From the command line:
 
-  git clone --recursive https://github.com/Noura/laughter-properties
-  cd laughter-properties
-  cd laughter_detection
-  touch __init__.py
-  cd ..
+`  git clone --recursive https://github.com/Noura/laughter-properties
+`  cd laughter-properties
+`  cd laughter_detection
+`  touch __init__.py
+`  cd ..
 
 Make sure all the audio files you want to process are in .wav format. If needed you can convert them with VLC, which you can download for free from <a href="http://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html">here</a>.
 
@@ -39,7 +39,7 @@ Launch a terminal session in the folder `laughter-properties`
 
 From the command line:
 
-  python process_laughs.py <input_directory>
+`  python process_laughs.py <input_directory>
 
 Where `input_directory` is the path containing the .wav files
 
@@ -48,12 +48,5 @@ Where `input_directory` is the path containing the .wav files
 Navigate to `input_directory` and open `results.txt`
 
 "relative loudness" is roughly the loudness of the laughter snippet divided by the average loudness of the whole audio recording. So, this tries to take care of the differences in overall loudness of different audio recordings.
-
-  
-
-
-
-
-
 
 
