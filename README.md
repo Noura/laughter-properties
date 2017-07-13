@@ -8,7 +8,7 @@ From the command line:
 `  cd laughter-properties
 `  cd laughter_detection
 `  touch __init__.py
-`  cd ..
+`  cd .. `
 
 Make sure all the audio files you want to process are in .wav format. If needed you can convert them with VLC, which you can download for free from <a href="http://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html">here</a>.
 
