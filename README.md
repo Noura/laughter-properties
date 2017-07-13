@@ -43,7 +43,7 @@ From the command line:
   python process_laughs.py <input_directory>
 ```
 
-Where `input_directory` is the path containing the .wav files
+Where `input_directory` is the absolute path of the folder containing the .wav files
 
 ### View the results
 
