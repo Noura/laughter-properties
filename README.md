@@ -25,7 +25,7 @@ Add the audio file you want to convert.
 Under `Choose Profile`, choose wav. 
 
 #### If wav file format is not an option for you...
-If wav is not an option, click `Customize...` then on the `Encapsulation` tab choose WAV, on the `Audio codec` tab choose `WAV`, then click `Save as new Profile...` and name it `my wav` or something descriptive. You should only need to do this the first time you Convert/Stream with VLC, in the future you can just make sure to choose the `my wav` profile.
+If wav is not an option, click `Customize...` then on the `Encapsulation` tab choose `WAV`, on the `Audio codec` tab choose `WAV`, then click `Save as new Profile...` and name it `my wav` or something descriptive. You should only need to do this the first time you Convert/Stream with VLC, in the future you can just make sure to choose the `my wav` profile.
 
 Choose an output destination and name for the .wav file.
 
@@ -39,7 +39,9 @@ Launch a terminal session in the folder `laughter-properties`
 
 From the command line:
 
-`  python process_laughs.py <input_directory>
+```
+  python process_laughs.py <input_directory>
+```
 
 Where `input_directory` is the path containing the .wav files
 
