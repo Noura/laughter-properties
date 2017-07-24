@@ -27,8 +27,8 @@ def analyze_recording(src):
     output_dir = src.strip('.wav')
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    
-    voices_src = output_dir + '_voices.wav'
+
+    voices_src = os.path.join(output_dir, 'voices.wav')
     extract_voices.main([1, src, voices_src])
     laughs = segment.laugh_segmenter.segment_laughs(voices_src, model, output_dir, threshold, min_length)
 
