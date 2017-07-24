@@ -1,3 +1,6 @@
 [submodule "laughter_detection"]
 	path = laughter_detection
 	url = https://github.com/jrgillick/laughter-detection
+[submodule "pywebrtcvad"]
+	path = pywebrtcvad
+	url = https://github.com/jrgillick/py-webrtcvad/

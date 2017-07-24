@@ -1,6 +1,6 @@
 # How to use
 
-## First time setup
+## First time setup - get the code
 
 From the command line:
 
@@ -8,9 +8,23 @@ From the command line:
   git clone --recursive https://github.com/Noura/laughter-properties
   cd laughter-properties
   touch laughter_detection/__init__.py
+  touch pywebrtcvad/__init__.py
 ```
 
-Make sure all the audio files you want to process are in .wav format. If needed you can convert them with VLC, which you can download for free from <a href="http://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html">here</a>.
+## First time setup - Set up VLC to convert to WAV
+You need to make sure all the audio files you want to process are in .wav format, mono, sample rate at 8000, 16000, or 32000, and sample width 2. If you need to convert the audio files to this format, you can use VLC, which you can download for free from <a href="http://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html">here</a>.
+
+In VLC, go to `File -> Convert/Stream`
+
+Under `Choose Profile`, choose `Custom` from the dropdown then press the button `Customize...`
+
+In the popup menu,
+under `Encapsulation` choose `WAV`
+under `Audio codec` choose `Codec: WAV`, `Channels: 1`, `Samplerate: 8000`
+
+Click `Save as new Profile...`, I suggest naming it something descriptive like `wav mono sr8000`.
+
+Now every time you want to convert a file you can choose this profile.
 
 ## Every time usage
 
@@ -22,9 +36,7 @@ Launch VLC, go to `File -> Convert/Stream`.
 
 Add the audio file you want to convert.
 
-Under `Choose Profile`, choose wav. 
-
-<strong>If wav file format is not an option for you... </strong> If wav is not an option in the dropdown list, click `Customize...` which is just next to the dropdown, then on the `Encapsulation` tab choose `WAV`, on the `Audio codec` tab choose `WAV`, then click `Save as new Profile...` and name it `my wav` or something descriptive. You should only need to do this the first time you Convert/Stream with VLC, in the future you can just make sure to choose the `my wav` profile.
+Under `Choose Profile`, choose `wav mono sr8000` or whatever you named your custom profile. 
 
 Choose an output destination and name for the .wav file.
 

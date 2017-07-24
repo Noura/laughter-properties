@@ -1,4 +1,5 @@
 import laughter_detection.segment_laughter as segment
+import pywebrtcvad.extract_voices as extract_voices
 import json
 import librosa
 import numpy
@@ -26,8 +27,10 @@ def analyze_recording(src):
     output_dir = src.strip('.wav')
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-            
-    laughs = segment.laugh_segmenter.segment_laughs(src, model, output_dir, threshold, min_length)
+    
+    voices_src = output_dir + '_voices.wav'
+    extract_voices.main([1, src, voices_src])
+    laughs = segment.laugh_segmenter.segment_laughs(voices_src, model, output_dir, threshold, min_length)
 
     # loudness of audio
     def loudness(a):
