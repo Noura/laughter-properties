@@ -58,7 +58,7 @@ Where `input_directory` is the absolute path of the folder containing the .wav f
 
 `<threshold>` adjusts the minimum probability threshold for classifying a frame as laughter. The default is 0.5, but you can  experiment with settings between 0 and 1 to see what works best for your data. Lower threshold values may give more false positives but may also recover a higher percentage of laughs from your file. (quoted from detection/README.md)
 
-`<aggressiveness>` parameter adjusts the voice extraction. It is an integery between 0 and 3. 0 is the least aggressive about filtering out non-speech, 3 is the most aggressive. (quoted from pywebrtcvad/README.rst)
+`<aggressiveness>` parameter adjusts the voice extraction. It is an integer between 0 and 3. 0 is the least aggressive about filtering out non-speech, 3 is the most aggressive. (quoted from pywebrtcvad/README.rst)
 
 ### View the results
 
